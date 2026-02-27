@@ -255,6 +255,10 @@ class App(tk.Tk):
             font=("Consolas", 9), wrap="word")
         self.log.pack(fill="both", expand=True, padx=4, pady=4)
 
+        # ── 版权 ──
+        ttk.Label(self, text="© 版权所有 JYJ", foreground="gray",
+                  font=("", 8)).pack(pady=(0, 6))
+
     # ── 输出格式 ──
     def _on_fmt_change(self, _event=None):
         state = "normal" if self.var_fmt.get() == "自定义…" else "disabled"
