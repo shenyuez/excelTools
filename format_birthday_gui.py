@@ -149,6 +149,12 @@ class App(tk.Tk):
         self.resizable(True, True)
         self.minsize(560, 500)
         self._rules = copy.deepcopy(DEFAULT_INPUT_RULES)
+        try:
+            import sys, os
+            base = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
+            self.iconbitmap(os.path.join(base, "icon.ico"))
+        except Exception:
+            pass
         self._build_ui()
         self._center()
 
