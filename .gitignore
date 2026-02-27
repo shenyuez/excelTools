@@ -11,3 +11,8 @@ __pycache__/
 *.xlsx
 *.xls
 *.xlsm
+
+# Original icon source (keep .ico, ignore source image)
+*.jpg
+*.jpeg
+*.png
