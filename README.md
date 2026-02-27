@@ -28,6 +28,8 @@ pyinstaller --onefile --windowed --name "ExcelBirthdayConverter" format_birthday
 # 输出在 dist/ExcelBirthdayConverter.exe
 ```
 
+或者直接双击项目根目录的 `build.bat`，效果相同。
+
 ## 界面说明
 
 | 区域 | 说明 |
